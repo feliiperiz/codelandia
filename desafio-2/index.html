@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Desafio 2 - JordanShoes</title>
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <p class="header-desconto">Ganhe R$ 10,00 de desconto no frete</p>
+      <p class="header-title">JordanShoes</p>
+    </header>
+    <section class="bg-hero">
+      <h1 class="bg-title">A melhor loja de Jordan</h1>
+      <p class="bg-description">O tênis Jordan é fruto de uma velha e forte <br> parceria entre a Nike e o jogador Michael Jordan.</p>
+    </section>
+    <section class="destaque">
+      <div class="destaque-text">
+        <h2 class="destaque-title">Destaque</h2>
+        <p class="destaque-description">Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. </p>
+      </div>
+
+      <div class="destaque-items">
+        <ul class="destaque-item">
+          <li><a href="#"><img src="./img/1.png" alt="Jordan 4"></a></li>
+          <li><a href="#"><img src="./img/2.png" alt="Jordan 4"></a></li>
+          <li><a href="#"><img src="./img/3.png" alt="Jordan 4"></a></li>
+          <li><a href="#"><img src="./img/5.png" alt="Jordan 5"></a></li>
+          <li><a href="#"><img src="./img/6.png" alt="Jordan 6"></a></li>
+          <li><a href="#"><img src="./img/7.png" alt="Jordan 7"></a></li>
+          <li><a href="#"><img src="./img/8.png" alt="Jordan 8"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer">Todos os direitos reservados.</p>
+    </footer>
+  </main>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '50px',
+      duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.container', { delay: 200 });
+    ScrollReveal().reveal('.bg-hero', { delay: 400 });
+    ScrollReveal().reveal('.destaque', { delay: 500 });
+    ScrollReveal().reveal('.destaque-items', { delay: 600 });
+  </script>
+</body>
+
+</html>
