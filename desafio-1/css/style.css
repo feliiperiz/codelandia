@@ -1,0 +1,167 @@
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca";
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.header {
+  background: var(--linear);
+  height: 250px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  margin: 0 270px;
+  color: var(--white);
+}
+
+.header-search {
+  display: flex;
+  width: 100%;
+  height: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 270px;
+  position: relative;
+}
+
+.header-search::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  left: 8px;
+  background-image: url("/codelandia/desafio-1/img/lupa.png");
+  position: absolute;
+}
+
+.header-search input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  padding-left: 40px;
+  color: #1a202c;
+}
+
+.header-search input::placeholder {
+  color: var(--text);
+}
+
+.header-search input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px 270px;
+  margin: 0 270px;
+}
+
+.content:first-child {
+  margin-top: 50px;
+}
+
+.content:last-child {
+  margin-bottom: 50px;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.content span {
+  display: block;
+  font-size: 16px;
+  color: #717171;
+  margin: 8px 0 22px 0;
+  position: relative;
+}
+
+.content span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 23px;
+  height: 20px;
+  right: 20px;
+  background-image: url("/codelandia/desafio-1/img/like.png");
+}
+
+.content h1 {
+  color: #1a202c;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #717171;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    height: 200px;
+  }
+  .header-content,
+  .header-search {
+    margin: 20px 100px;
+  }
+  .main {
+    margin: 0 100px;
+  }
+  .content:last-child {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 613px) {
+  .header {
+    height: 200px;
+  }
+  .header-content,
+  .header-search {
+    margin: 20px 20px;
+  }
+  .main {
+    margin: 0 20px;
+  }
+  .content:last-child {
+    margin-bottom: 100px;
+  }
+
