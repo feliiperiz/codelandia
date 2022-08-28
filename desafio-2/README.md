@@ -2,7 +2,7 @@
 
 <img src="./img/JordanShpes.png" alt="Resultado final">
 
-> Resultado final do primeiro desafio da Codelândia do Iuri Silva.
+> Resultado final do segundo desafio da Codelândia do Iuri Silva.
 
 ### Etapas
 
