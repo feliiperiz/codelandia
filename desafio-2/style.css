@@ -226,6 +226,9 @@ img {
 }
 
 @media (max-width: 414px) {
+  .bg-hero {
+    height: 270px;
+  }
   .bg-title {
     font-size: 18px;
   }
@@ -238,5 +241,11 @@ img {
   }
   .header-desconto {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .bg-hero {
+    height: 260px;
   }
 }
